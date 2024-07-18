@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/plotRequestFragment">
+
+    <fragment
+        android:id="@+id/plotRequestFragment"
+        android:name="com.example.points.ui.PointsRequestFragment"
+        android:label="PlotRequestFragment" >
+        <action
+            android:id="@+id/action_plotRequestFragment_to_plotFragment"
+            app:destination="@id/plotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plotFragment"
+        android:name="com.example.points.ui.plot.PlotFragment"
+        android:label="PlotFragment" >
+        <argument
+            android:name="points"
+            app:argType="com.example.points.model.Point[]" />
+    </fragment>
+</navigation>

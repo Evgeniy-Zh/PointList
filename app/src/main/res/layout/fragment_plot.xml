@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_points"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <com.androidplot.xy.XYPlot
+        ap:paddingBottom="12dp"
+        ap:paddingRight="12dp"
+        ap:paddingLeft="4dp"
+        android:id="@+id/plot"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_lines"
+        android:text="Плавные линии"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
